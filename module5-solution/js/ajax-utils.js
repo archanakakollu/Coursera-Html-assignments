@@ -23,6 +23,10 @@ function getRequestObject() {
 // Makes an Ajax GET request to 'requestUrl'
 ajaxUtils.sendGetRequest = 
   function(requestUrl, responseHandler, isJsonResponse) {
+    console.log("inside ajax sendGetRequest");
+    console.log(requestUrl);
+    console.log(responseHandler);
+
     var request = getRequestObject();
     request.onreadystatechange = 
       function() { 
